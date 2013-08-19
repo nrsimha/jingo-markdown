@@ -40,3 +40,8 @@ Example of using extension:
     {% markdown %}
     Text which will get converted with Markdown.
     {% endmarkdown %}
+
+License
+=======
+
+This software is licensed under The MIT License (MIT). For more information, read the file LICENSE.
