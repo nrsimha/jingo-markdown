@@ -1,6 +1,6 @@
 from markdown import markdown as _markdown
 from jingo import register
-
+from jinja2 import Markup
 
 @register.filter
 def markdown(text, *args, **kwargs):
@@ -12,4 +12,4 @@ def markdown(text, *args, **kwargs):
     :param kwargs: - markdown keyword arguments (http://freewisdom.org/projects/python-markdown/Using_as_a_Module);
     :return:       - parsed result.
     """
-    return _markdown(text, *args, **kwargs)
+    return Markup(_markdown(text, *args, **kwargs))
