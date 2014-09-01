@@ -9,11 +9,11 @@ except ImportError:
 
 setup(
     name='jingo-markdown',
-    version="1.1",
+    version="1.2",
     description='Jingo (Jinja2) extension and filter for parse markdown text markup.',
-    author='Petr Vacha',
-    author_email='petr@monkeywarrior.com',
-    url='https://github.com/monkeywarrior/jingo-markdown',
+    author='Prahlad Nrsimha Das - Petr Vacha',
+    author_email='pnd@mayapurmedia.com',
+    url='https://github.com/mayapurmedia/jingo-markdown',
     packages=find_packages(),
     classifiers=[
         'Environment :: Web Environment',
