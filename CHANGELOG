@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+v1.2
+----
+
+* Added support for Python 3.
+
 v1.1
 ----
 
