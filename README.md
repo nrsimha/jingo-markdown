@@ -13,6 +13,10 @@ Python-Markdown - http://packages.python.org/Markdown/
 Installation
 =============
 
+Install jingo-markdown:
+
+    pip install jingo-markdown
+
 Add 'jingo_markdown' to INSTALLED_APPS.
 
 To be able to use `markdown` extension you should add it to JINJA_CONFIG extensions list:
