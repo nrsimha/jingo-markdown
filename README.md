@@ -1,7 +1,7 @@
-jingo-markdown
+django-jinja-markdown
 ==============
 
-Jingo (Jinja2) extension and filter for parse markdown text markup.
+django-jinja (Jinja2) extension and filter for parse markdown text markup.
 
 
 Requirements
@@ -13,20 +13,24 @@ Python-Markdown - http://packages.python.org/Markdown/
 Installation
 =============
 
-Install jingo-markdown:
+Install django-jinja-markdown:
 
-    pip install jingo-markdown
+    pip install django-jinja-markdown
 
-Add 'jingo_markdown' to INSTALLED_APPS.
+Add 'django_jinja_markdown' to INSTALLED_APPS.
 
-To be able to use `markdown` extension you should add it to JINJA_CONFIG extensions list:
+To be able to use `markdown` extension you should add it to TEMPLATES extensions list:
 
-JINJA_CONFIG = {
-    'extensions': [
-        'jingo_markdown.extensions.MarkdownExtension',
-    ]
-}
-
+TEMPLATES = [
+    {
+        'BACKEND': 'django_jinja.backend.Jinja2',
+        'OPTIONS': {
+            'extensions': [
+                'django_jinja_markdown.extensions.MarkdownExtension',
+            ],
+        }
+    },
+]
 
 Basic Use
 =========

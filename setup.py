@@ -8,12 +8,12 @@ except ImportError:
     from setuptools import setup, find_packages
 
 setup(
-    name='jingo-markdown',
-    version="1.3",
-    description='Jingo (Jinja2) extension and filter for parse markdown text markup.',
-    author='Prahlad Nrsimha Das (Petr Vacha) - Mayapur Media',
-    author_email='pnd@mayapurmedia.com',
-    url='https://github.com/mayapurmedia/jingo-markdown',
+    name='django-jinja-markdown',
+    version="1.0",
+    description='Django-Jinja (Jinja2) extension and filter for parse markdown text markup.',
+    author='Paul McLanahan',
+    author_email='pmac@mozilla.com',
+    url='https://github.com/pmac/django-jinja-markdown',
     install_requires=['Markdown'],
     packages=find_packages(),
     classifiers=[
@@ -21,6 +21,7 @@ setup(
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        "Programming Language :: Python :: 2.7",
         'Framework :: Django',
         'License :: OSI Approved :: MIT License',
         'Topic :: Software Development :: Code Generators',

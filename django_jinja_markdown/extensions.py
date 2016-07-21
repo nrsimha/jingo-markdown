@@ -4,7 +4,7 @@ import markdown
 
 
 class MarkdownExtension(Extension):
-    tags = set(['markdown'])
+    tags = {'markdown'}
 
     def __init__(self, environment):
         super(MarkdownExtension, self).__init__(environment)

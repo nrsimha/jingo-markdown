@@ -1,17 +1,7 @@
 CHANGES
 =======
 
-v1.3
+v1.0
 ----
 
-* Added Markdown as requirement.
-
-v1.2
-----
-
-* Added support for Python 3.
-
-v1.1
-----
-
-* Marked Markdown output as safe.
+* Forked jingo-markdown and changed it to support django-jinja
