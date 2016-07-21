@@ -1,21 +1,36 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-try:
-    from setuptools import setup, find_packages
-except ImportError:
-    from ez_setup import use_setuptools
-    use_setuptools()
-    from setuptools import setup, find_packages
+import codecs
+import os
+
+from setuptools import setup, find_packages
+
+
+base_dir = os.path.dirname(__file__)
+
+with codecs.open(os.path.join(base_dir, 'README.md'), 'r', encoding='utf8') as f:
+    long_description = f.read()
+
+about = {}
+with open(os.path.join(base_dir, 'django_jinja_markdown', '__about__.py')) as f:
+    exec (f.read(), about)
+
 
 setup(
-    name='django-jinja-markdown',
-    version="1.0",
-    description='Django-Jinja (Jinja2) extension and filter for parse markdown text markup.',
-    author='Paul McLanahan',
-    author_email='pmac@mozilla.com',
-    url='https://github.com/pmac/django-jinja-markdown',
+    name=about['__title__'],
+    version=about['__version__'],
+    description=about['__summary__'],
+    long_description=long_description,
+    license=about['__license__'],
+    url=about['__uri__'],
+    author=about['__author__'],
+    author_email=about['__email__'],
+    platforms=['any'],
+    packages=find_packages(exclude=['ez_setup', 'tests']),
+    zip_safe=False,
+    include_package_data=True,
     install_requires=['Markdown'],
-    packages=find_packages(),
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
@@ -27,6 +42,4 @@ setup(
         'Topic :: Software Development :: Code Generators',
         'Topic :: Text Processing :: Markup',
     ],
-    include_package_data=True,
-    zip_safe=False,
 )

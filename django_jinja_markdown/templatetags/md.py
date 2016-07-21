@@ -4,6 +4,7 @@ from jinja2 import Markup
 
 
 @library.filter
+@library.global_function
 def markdown(text, *args, **kwargs):
     """
     Parse text with markdown library.
