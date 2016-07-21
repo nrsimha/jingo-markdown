@@ -1,8 +1,9 @@
-from django.template import engines
 from django.test import TestCase
 
+from django_jinja.backend import Jinja2
 
-engine = engines.all()[0]
+
+engine = Jinja2.get_default()
 
 
 class TestDjangoJinjaMarkdown(TestCase):
