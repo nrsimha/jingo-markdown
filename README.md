@@ -1,6 +1,9 @@
 Django-Jinja-Markdown
 ==============
 
+[![Travis branch](https://img.shields.io/travis/pmac/django-jinja-markdown/master.svg?maxAge=2592000)](https://travis-ci.org/pmac/django-jinja-markdown/)
+[![PyPI](https://img.shields.io/pypi/v/django-jinja-markdown.svg?maxAge=2592000)](https://pypi.python.org/pypi/django-jinja-markdown)
+
 [Django-Jinja][] ([Jinja2][]) extension and filter to parse markdown text in templates.
 
 Requirements
