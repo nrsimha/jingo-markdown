@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 
 base_dir = os.path.dirname(__file__)
 
-with codecs.open(os.path.join(base_dir, 'README.md'), 'r', encoding='utf8') as f:
+with codecs.open(os.path.join(base_dir, 'README.rst'), 'r', encoding='utf8') as f:
     long_description = f.read()
 
 about = {}
