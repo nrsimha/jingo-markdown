@@ -16,7 +16,7 @@ __title__ = 'django-jinja-markdown'
 __summary__ = 'Django-Jinja (Jinja2) extension and filter for parse markdown text markup.',
 __uri__ = 'https://github.com/pmac/django-jinja-markdown'
 
-__version__ = '1.0'
+__version__ = '1.0.1'
 
 __author__ = 'Paul McLanahan'
 __email__ = 'paul@mclanahan.net'
